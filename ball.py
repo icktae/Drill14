@@ -15,8 +15,8 @@ class Ball:
 
     def set_background(self, bg):
         self.bg = bg
-        self.x = random.randint(50, self.bg.w)
-        self.y = random.randint(50, self.bg.h)
+        self.x = random.randint(50, self.bg.w - 100)
+        self.y = random.randint(50, self.bg.h - 100)
 
     def draw(self):
         sx, sy = self.x - self.bg.window_left, self.y - self.bg.window_bottom
